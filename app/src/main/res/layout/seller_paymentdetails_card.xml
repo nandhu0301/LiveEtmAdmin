@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:id="@+id/content">
+
+        <androidx.cardview.widget.CardView
+            android:paddingBottom="5dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_margin="10dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_margin="3dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginLeft="25dp"
+                                android:id="@+id/openingCashtxt"
+                                android:layout_width="170dp"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="1dp"
+                                android:text="Start Date"
+                                android:paddingBottom="0dp"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/startDate"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/openingCashtxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="1dp"
+                                android:text="01-002-010"
+                                android:paddingBottom="0dp"
+                                android:textSize="15dp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_margin="3dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginLeft="25dp"
+                                android:id="@+id/closingCashtxt"
+                                android:layout_width="170dp"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="1dp"
+                                android:text="End Date"
+                                android:paddingBottom="0dp"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/endDate"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/closingCashtxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="1dp"
+                                android:text="100000"
+                                android:paddingBottom="0dp"
+                                android:textSize="15dp" />
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_margin="3dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginLeft="25dp"
+                                android:id="@+id/counterCashtxt"
+                                android:layout_width="170dp"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="1dp"
+                                android:text="Number of Orders"
+                                android:paddingBottom="0dp"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:id="@+id/numberOfOrders"
+                                android:layout_toRightOf="@+id/counterCashtxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="1dp"
+                                android:text=""
+                                android:paddingBottom="0dp"
+                                android:textSize="15dp" />
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_margin="3dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginLeft="25dp"
+                                android:id="@+id/counterCashtxt"
+                                android:layout_width="170dp"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="1dp"
+                                android:text="Total Billed Amount"
+                                android:paddingBottom="0dp"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:id="@+id/totalBilledAmount"
+                                android:layout_toRightOf="@+id/counterCashtxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="1dp"
+                                android:text=""
+                                android:paddingBottom="0dp"
+                                android:textSize="15dp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_margin="3dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginLeft="25dp"
+                                android:id="@+id/counterCashtxt"
+                                android:layout_width="170dp"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="1dp"
+                                android:text="Total Delivery Amount"
+                                android:paddingBottom="0dp"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:id="@+id/totalDeliveryAmount"
+                                android:layout_toRightOf="@+id/counterCashtxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="1dp"
+                                android:text=""
+                                android:paddingBottom="0dp"
+                                android:textSize="15dp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_margin="3dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginLeft="25dp"
+                                android:id="@+id/resulttxt"
+                                android:layout_width="170dp"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="1dp"
+                                android:text="Metroz Service Charge  "
+                                android:paddingBottom="0dp"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:id="@+id/metrozServiceCharge"
+                                android:layout_toRightOf="@+id/resulttxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="1dp"
+                                android:text="100000"
+                                android:paddingBottom="0dp"
+                                android:textSize="15dp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_margin="3dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content">
+                            <View
+                                android:id="@+id/divider11"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="16dp"
+                                android:background="?android:attr/listDivider"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_margin="3dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:paddingTop="15dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/billNumberfromtxt"
+                                android:layout_width="170dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:paddingTop="1dp"
+                                android:paddingBottom="0dp"
+                                android:text="Settlement Amount"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:id="@+id/settelementAmount"
+                                android:layout_toRightOf="@+id/billNumberfromtxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="1dp"
+                                android:text=""
+                                android:paddingBottom="0dp"
+                                android:textSize="15dp" />
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_margin="3dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:paddingTop="5dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginLeft="25dp"
+                                android:id="@+id/billNumberfromtxter"
+                                android:layout_width="170dp"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="1dp"
+                                android:text="Settlement Status"
+                                android:paddingBottom="0dp"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:id="@+id/settelementStatus"
+                                android:layout_toRightOf="@+id/billNumberfromtxter"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="1dp"
+                                android:text="Pending"
+                                android:paddingBottom="0dp"
+                                android:textSize="15dp" />
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_margin="3dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content">
+                            <View
+
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="2dp"
+                                android:background="?android:attr/listDivider"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</RelativeLayout>
+
+

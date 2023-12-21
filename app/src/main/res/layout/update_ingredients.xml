@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/title_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/header"
+            android:background="@color/cyanbase"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:text="Add Ingredient Image"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@+id/textheader"
+                android:id="@+id/cancel_dialog"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/cancel"
+                android:backgroundTint="#FFFFFF"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                />
+        </RelativeLayout>
+
+        <EditText
+            android:visibility="invisible"
+            android:id="@+id/invisbletext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RelativeLayout
+            android:layout_below="@+id/header"
+            android:id="@+id/edittext"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+       <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+           android:id="@+id/ingredientNameSpinner"
+           android:layout_margin="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp"
+            android:layout_below="@+id/edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/pick_image"
+                android:layout_margin="10dp"
+
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Pick Ingredient Image"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:background="@color/cyanbase"/>
+
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/image"
+                android:layout_below="@+id/updatecatgory_pickimage_button_dialog"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/b_chooseimage"
+
+                />
+            <ProgressBar
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:backgroundTint="@color/black"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/progress"/>
+
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/upload_ingredients"
+                android:layout_centerInParent="true"
+                android:layout_width="180dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/updatecatagoryImage"
+                android:layout_marginTop="23dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/cyanbase"
+                android:text="Upload Ingredients"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

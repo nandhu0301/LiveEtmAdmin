@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="500dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:background="@color/cyanbase"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/texttitle"
+                android:text="Advertisement Details"
+                android:textSize="18dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                />
+
+            <ImageView
+                android:id="@+id/cancelIcon"
+                android:layout_alignParentRight="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/cancel"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/Aadharimage_store"
+            android:layout_margin="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

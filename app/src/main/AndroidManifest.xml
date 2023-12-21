@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.smiligence.etmtechAdmin">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:exported="false"
+        android:fullBackupContent="false"
+        android:grantUriPermissions="true"
+        android:icon="@mipmap/ic_launcher_new"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_new"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.smiligence.etmtechAdmin.SellerMontlyPaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.smiligence.etmtechAdmin.MaintainDeliveryFairActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.smiligence.etmtechAdmin.MonthlyPaymentSettlements"
+            android:exported="false" />
+        <activity
+            android:name="com.smiligence.etmtechAdmin.ItemsReportGenerationActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.smiligence.etmtechAdmin.OrderDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.smiligence.etmtechAdmin.OrderTrackingActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.smiligence.etmtechAdmin.ViewStoreBasedItems"
+            android:exported="false" />
+        <activity
+            android:name="com.smiligence.etmtechAdmin.StoreDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.smiligence.etmtechAdmin.StoreHistory"
+            android:exported="false" />
+        <activity
+            android:name="com.smiligence.etmtechAdmin.AdminContactUploadingActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.smiligence.etmtechAdmin.ApproveSellersActivity"
+            android:exported="false" />
+        <activity android:name="com.smiligence.etmtechAdmin.WebPageActivity" />
+        <activity
+            android:name="com.smiligence.etmtechAdmin.BillingActivity"
+            android:label="Retail Billing" />
+        <activity android:name="com.smiligence.etmtechAdmin.Add_Description_Activity" />
+        <activity android:name="com.smiligence.etmtechAdmin.OffersActivity" />
+        <activity android:name="com.smiligence.etmtechAdmin.ForgetPasswordActivity" />
+        <activity android:name="com.smiligence.etmtechAdmin.ViewAdvertisementActivity" />
+        <activity android:name="com.smiligence.etmtechAdmin.ItemRatingReviewApprovalActivity" />
+        <activity android:name="com.smiligence.etmtechAdmin.LegalDetailsUploadActivity" />
+        <activity android:name="com.smiligence.etmtechAdmin.CustomerDetailsActivity" />
+        <activity android:name="com.smiligence.etmtechAdmin.DeliverySettings" />
+        <activity android:name="com.smiligence.etmtechAdmin.AddItemActivity" />
+        <activity android:name="com.smiligence.etmtechAdmin.AddAdvertisementActivity" />
+        <activity android:name="com.smiligence.etmtechAdmin.MyProfileActivity" />
+        <activity android:name="com.smiligence.etmtechAdmin.CategoryActivity" />
+        <activity android:name="com.smiligence.etmtechAdmin.UpdateOrderStatusActivity" />
+        <activity android:name="com.smiligence.etmtechAdmin.ViewOrderActivity" />
+        <activity android:name="com.smiligence.etmtechAdmin.ReportGenerationActivity" />
+        <activity android:name="com.smiligence.etmtechAdmin.DiscountActivity" />
+        <activity android:name="com.smiligence.etmtechAdmin.ViewItemDetailsCategoryActivity" />
+        <activity android:name="com.smiligence.etmtechAdmin.LoginActivity" />
+        <activity android:name="com.smiligence.etmtechAdmin.DashBoardActivity" />
+        <activity android:name="com.smiligence.etmtechAdmin.RegisterActivity" />
+
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="true" />
+
+        <activity android:name="com.smiligence.etmtechAdmin.common.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.smiligence.etmtechAdmin.common.FirebaseMessagingService"
+            android:exported="true"
+            android:permission="TODO"
+            tools:ignore="ExportedService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+
+    </application>
+
+</manifest>

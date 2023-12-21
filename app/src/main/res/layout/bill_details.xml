@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/txtlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Settlement Details"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/Cancel"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:src="@drawable/ic_cancelicon" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/billamount_txt"
+        android:layout_below="@+id/txtlayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20sp"
+            android:textColor="@color/black"
+            android:id="@+id/totalamount_txt"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:layout_marginTop="10sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="20sp"
+            android:layout_marginStart="20sp"
+            android:textColor="@color/black"
+            android:id="@+id/enddate_txt"
+            android:textSize="15sp"
+            android:layout_marginTop="10sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10sp"
+        android:id="@+id/radiogroup_layout"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/billamount_txt">
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_marginStart="20sp"
+            android:layout_marginEnd="20sp"
+            android:id="@+id/radioGroup">
+
+            <RadioButton
+                android:id="@+id/radiocheque"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="   Cheque"
+                android:layout_marginTop="20dp"
+                android:checked="false"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/radioonline"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="   Online"
+                android:layout_marginTop="20dp"
+                android:checked="false"
+                android:textSize="18sp" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radiogroup_layout"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textview_amt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginEnd="30sp"
+            android:textColor="@color/black"
+            android:text="Enter the Amount"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:id="@+id/edttext_amount"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="20sp"
+            android:digits="1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+            android:layout_marginEnd="20sp"
+            android:background="@drawable/edittext_round"
+            android:inputType="number"
+            android:maxLength="7" />
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp">
+
+            <Button
+                android:id="@+id/uploadReceipt"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginBottom="35dp"
+                android:background="@drawable/b_round"
+                android:backgroundTint="@color/colorPrimary"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Upload Receipt"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/white" />
+
+
+            <ImageView
+                android:id="@+id/receiptImageview"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="4dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_baseline_image_24" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <Button
+                android:id="@+id/changePaymentStatusButton"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginBottom="35dp"
+                android:background="@drawable/b_round"
+                android:backgroundTint="@color/colorPrimary"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text="Change Payment Status"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>
+
+<!--
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical">
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="80dp"
+                android:text="Settlement Details"
+                android:textColor="@color/cyanbase"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/Cancel"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#8B1F80"
+                android:src="@drawable/ic_cancelicon" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:paddingRight="5dp"
+                android:layout_below="@+id/bill_Number_text"
+                android:layout_marginTop="5dp"
+                android:text="Bill Number"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:paddingRight="5dp"
+                android:layout_below="@+id/bill_Number_text"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentRight="true"
+                android:text="Bill Amount"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarSize="0dp"
+            android:background="@null"
+            android:id="@+id/billetailslist" />
+
+        <RelativeLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:paddingRight="5dp"
+                android:layout_below="@+id/bill_Number_text"
+                android:layout_marginTop="5dp"
+                android:text="Total Billed Amount"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:paddingRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentRight="true"
+                android:text=""
+                android:textColor="#000000"
+                android:id="@+id/totalAmountInfo"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:padding="5dp"
+                        android:background="@drawable/b_round"
+                        android:backgroundTint="@color/cyanbase"
+                        android:textColor="@color/white"
+                        android:id="@+id/uploadReceipt"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_margin="35dp"
+                        android:gravity="center"
+                        android:text="Upload Receipt" />
+
+
+                    <ImageView
+                        android:id="@+id/receiptImageview"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="200dp"
+                        android:layout_marginTop="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_baseline_image_24" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <Button
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:background="@drawable/b_round"
+                android:backgroundTint="@color/cyanbase"
+                android:textColor="@color/white"
+                android:id="@+id/changePaymentStatusButton"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="35dp"
+                android:gravity="center"
+                android:foregroundGravity="center"
+                android:text="Change Payment Status" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>-->

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:visibility="visible"
+    tools:openDrawer="start">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_marginBottom="70dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_marginTop="70dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
+            android:hint="Enter Terms and Conditions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:inputType="textMultiLine"
+                android:gravity="top|left"
+
+                android:id="@+id/TandCText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:textAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
+                android:id="@+id/b_TandC"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/b_round"
+                android:backgroundTint="@color/cyanbase"
+                android:text="Save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:hint="Enter Privacy Policy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/privacypolicy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:textAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
+                android:id="@+id/buttonPrivacyPolicy"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/b_round"
+                android:backgroundTint="@color/cyanbase"
+                android:text="Save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:hint="Enter Disclaimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/desclaimer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:textAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
+                android:id="@+id/b_Desclaimer"
+                android:text="Save"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/b_round"
+                android:backgroundTint="@color/cyanbase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:hint="Enter About Us"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/aboutus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/b_aboutus"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/b_round"
+                android:backgroundTint="@color/cyanbase"
+                android:text="Save"
+                android:textAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+    </RelativeLayout>
+    </ScrollView>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/app_bar_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:state_checked="true"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/activity_main_drawer" />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

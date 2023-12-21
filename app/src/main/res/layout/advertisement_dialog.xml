@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center">
+
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:text="Advertisement Details"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/Canceldialog"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/cancel"
+        android:clickable="true" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="20dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Placed Date:"
+                    android:layout_marginLeft="20dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:gravity="left|bottom">
+                    <EditText
+                        android:textColor="@color/black"
+                        android:focusable="false"
+                        android:enabled="false"
+                        android:hint="Advertisement Priority"
+                        android:id="@+id/adv_priority"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:gravity="left|bottom"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Status:"
+                    android:layout_marginLeft="20dp"
+
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:gravity="left|bottom">
+                    <EditText
+                        android:textColor="@color/black"
+                        android:focusable="false"
+                        android:enabled="false"
+                        android:hint="Advertisements Agent"
+                        android:id="@+id/adv_agent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:gravity="left|bottom"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Status:"
+                    android:layout_marginLeft="20dp"
+
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:gravity="left|bottom">
+                    <EditText
+                        android:textColor="@color/black"
+                        android:focusable="false"
+                        android:enabled="false"
+                        android:hint="Advertisement End Date"
+                        android:id="@+id/adv_enddate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:gravity="left|bottom"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Status:"
+                    android:layout_marginLeft="20dp"
+
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:gravity="left|bottom">
+                    <EditText
+                        android:textColor="@color/black"
+                        android:focusable="false"
+                        android:enabled="false"
+                        android:hint="Advertisements Duration"
+                        android:id="@+id/adv_duration"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:gravity="left|bottom"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Status:"
+                    android:layout_marginLeft="20dp"
+
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:gravity="left|bottom">
+                    <EditText
+                        android:textColor="@color/black"
+                        android:focusable="false"
+                        android:enabled="false"
+                        android:hint="Advertisements Placing"
+                        android:id="@+id/adv_placing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:gravity="left|bottom"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Status:"
+                    android:layout_marginLeft="20dp"
+
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:gravity="left|bottom">
+                    <EditText
+                        android:textColor="@color/black"
+                        android:focusable="false"
+                        android:enabled="false"
+                        android:hint="Scheduled Date"
+                        android:id="@+id/scheduleddate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:gravity="left|bottom"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Status:"
+                    android:layout_marginLeft="20dp"
+
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:gravity="left|bottom">
+                    <EditText
+                        android:textColor="@color/black"
+                        android:focusable="false"
+                        android:enabled="false"
+                        android:hint="Scheduled Time"
+                        android:id="@+id/scheduledtime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:gravity="left|bottom"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <RelativeLayout
+                    android:layout_marginLeft="20dp"
+                    android:visibility="visible"
+                    android:id="@+id/deliveryontheway1"
+                    app:layout_constraintTop_toBottomOf="@+id/order_status"
+                    android:layout_width="match_parent"
+                    android:gravity="left"
+                    android:layout_height="wrap_content">
+
+
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

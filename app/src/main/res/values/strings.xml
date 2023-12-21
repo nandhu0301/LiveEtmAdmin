@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Tech Admin</string>
+    <string name="title_activity_user_role_creation">UserRoleCreationActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="Quantity_units_spinner">
+        <item>Select units</item>
+        <item>pack</item>
+        <item>Box</item>
+        <item>Piece</item>
+    </string-array>
+
+    <string-array name="advertisement_price">
+        <item>Select advertisement Placing</item>
+        <item>Home Page Primary</item>
+        <item>Home Page Secondary</item>
+        <item>Store List Primary</item>
+        <item>Store List Secondary</item>
+        <item>View Item Primary </item>
+        <item>View Cart Primary</item>
+
+        <!--   <item>Order Summary Page Primary</item>-->
+        <!--  <item>Order Success Page Primary</item>-->
+
+    </string-array>
+
+    <string-array name="advertisement_duration">
+        <item>Select advertisement duration</item>
+        <item>One Hour</item>
+        <item>One Day</item>
+        <item>One Week</item>
+    </string-array>
+
+    <string-array name="status_change">
+        <item>Select Status</item>
+        <item>Order confirmed</item>
+        <item>Packed and ready for shipping</item>
+        <item>Shipped</item>
+    </string-array>
+    <string-array name="advertismentype_spinner">
+        <item>Select advertisement</item>
+        <item>Category Activity</item>
+        <item>Store Activity</item>
+        <item>Item Activity</item>
+
+    </string-array>
+
+    <string name="landline"> <u>+914524500081</u></string>
+    <string name="whatsapp"> <u>+918610226102</u></string>
+    <string name="website"> <u>www.smiligence.com</u></string>
+
+</resources>

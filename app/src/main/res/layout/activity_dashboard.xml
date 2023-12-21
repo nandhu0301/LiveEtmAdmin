@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:visibility="visible"
+    tools:openDrawer="start">
+
+
+    <RelativeLayout
+        android:background="@color/cyanbase"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+        <LinearLayout
+
+            android:layout_marginTop="60dp"
+            android:layout_below="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/b_round">
+
+                    <ImageView
+                        android:id="@+id/sales_report"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/sales_report" />
+
+                    <TextView
+                        android:id="@+id/sales_text"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_below="@+id/sales_report"
+                        android:text="Sales"
+                        android:textSize="15dp" />
+                    <TextView
+                        android:id="@+id/sales1"
+                        android:text=""
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_below="@+id/sales_text"
+                        android:textSize="15dp" />
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/b_round">
+                    <ImageView
+                        android:layout_alignParentTop="true"
+                        android:id="@+id/Items_image"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/cart"
+                        android:layout_marginTop="8dp" />
+                    <TextView
+
+                        android:id="@+id/items_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_below="@+id/Items_image"
+                        android:text="Items"
+                        android:textSize="15dp" />
+                    <TextView
+                        android:id="@+id/items"
+                        android:visibility="invisible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_below="@+id/items_text"
+                        android:text=""
+                        android:textSize="15dp" />
+
+                </RelativeLayout>
+
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/b_round">
+
+                    <ImageView
+                        android:id="@+id/quantityImage"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/quantity" />
+
+                    <TextView
+
+                        android:id="@+id/quantity_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_below="@+id/quantityImage"
+                        android:text="Quantity"
+                        android:textSize="15dp" />
+                    <TextView
+                        android:id="@+id/quantity"
+                        android:visibility="invisible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_below="@+id/quantity_text"
+                        android:text=""
+                        android:textSize="15dp" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/b_round">
+                    <ImageView
+                        android:layout_alignParentTop="true"
+                        android:id="@+id/customersimg"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@null"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/customers"
+                        android:layout_marginTop="8dp" />
+
+                    <TextView
+
+                        android:id="@+id/cus_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_below="@+id/customersimg"
+                        android:text="Customers"
+                        android:textSize="15dp" />
+                    <TextView
+                        android:id="@+id/customer"
+                        android:visibility="invisible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_below="@+id/cus_text"
+                        android:text=""
+                        android:textSize="15dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/b_round">
+                    <ImageView
+                        android:layout_alignParentTop="true"
+                        android:id="@+id/expenseimg"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@null"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/store"
+                        android:layout_marginTop="8dp" />
+
+                    <TextView
+
+                        android:id="@+id/expenses_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/expenseimg"
+                        android:layout_centerInParent="true"
+                        android:text="Stores"
+                        android:textSize="15dp" />
+                    <TextView
+                        android:id="@+id/storeName"
+                        android:visibility="invisible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_below="@+id/expenses_text"
+                        android:text=""
+                        android:textSize="15dp" />
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/b_round">
+
+                    <ImageView
+                        android:id="@+id/reportsimg"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="8dp"
+                        android:background="@null"
+                        android:src="@drawable/bill" />
+
+                    <TextView
+
+                        android:id="@+id/report_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_below="@+id/reportsimg"
+                        android:text="Orders"
+                        android:textSize="15dp" />
+
+                    <TextView
+
+                        android:id="@+id/bill"
+                        android:visibility="invisible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_below="@+id/report_text"
+                        android:text=""
+                        android:textSize="15dp" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:elevation="5dp"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="8dp">
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="@color/white">
+
+                        <com.github.mikephil.charting.charts.BarChart
+                            android:id="@+id/barChart"
+                            android:layout_width="fill_parent"
+                            android:layout_height="300dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:elevation="5dp"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="8dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="@color/white">
+
+                        <com.github.mikephil.charting.charts.BarChart
+                            android:id="@+id/salesBarChart"
+                            android:layout_width="fill_parent"
+                            android:layout_height="300dp"
+                            android:layout_margin="10dp"
+                            />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_marginBottom="150dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="8dp">
+
+
+              <!--  <RelativeLayout
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="80dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >-->
+                      <LinearLayout
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginBottom="80dp"
+                          android:layout_weight="2">
+
+
+
+                    <Button
+                        android:id="@+id/viewreport"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:backgroundTint="@color/white"
+                        android:textColor="@color/black"
+                        android:text=" View Sales Reports  "
+                           android:layout_weight="1"
+                        android:background="@drawable/b_round"
+                        android:layout_margin="5dp" />
+
+                    <Button
+                        android:id="@+id/itemReports"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:backgroundTint="@color/white"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"
+                        android:text="  View Items Reports  "
+                        android:background="@drawable/b_round"
+                        android:layout_margin="5dp" />
+
+                   <!-- <Button
+                        android:id="@+id/generateExcel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/b_round"
+                        android:backgroundTint="@color/white"
+                        android:text="   Generate Excel   "
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@color/black" />-->
+                <!--</RelativeLayout>-->
+
+                      </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/app_bar_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <fr.castorflex.android.smoothprogressbar.SmoothProgressBar
+
+            android:id="@+id/gradient"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+
+            android:indeterminate="true"
+            android:visibility="invisible"
+            tools:ignore="MissingConstraints" />
+
+    </FrameLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:state_checked="true"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:layout_marginTop="25dp"
+
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/activity_main_drawer" />
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+

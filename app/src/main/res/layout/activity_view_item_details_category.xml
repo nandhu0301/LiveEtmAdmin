@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- <com.google.android.material.appbar.AppBarLayout
+         android:id="@+id/appBarLayout3"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent">
+
+
+     </com.google.android.material.appbar.AppBarLayout>-->
+    <LinearLayout
+        android:id="@+id/orderdetails_header"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        tools:ignore="MissingConstraints">
+        <ImageView
+            android:id="@+id/redirecttohome"
+            android:background="@drawable/ic_outline_arrow"
+            android:backgroundTint="@color/black"
+            android:layout_margin="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+        <TextView
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+
+            android:text="Order Details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <ScrollView
+
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderdetails_header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include layout="@layout/orders_details_layout"
+                android:id="@+id/order_details_layout"/>
+            <include
+
+                android:id="@+id/taxAmountCalculationLayout"
+                layout="@layout/tax_layout" />
+            <include layout="@layout/item_details_header"
+                android:id="@+id/itemdetailslayoutheader"/>
+            <include layout="@layout/item_listview_layout"
+                android:id="@+id/itemdetailslayout"/>
+            <include layout="@layout/payment_details"
+                android:id="@+id/payment_details"/>
+            <include layout="@layout/shipping_details_layout"
+                android:id="@+id/shipping_details_layout"/>
+            <include layout="@layout/cart_total_amount_layout"
+                android:id="@+id/cart_total_amount_layout"/>
+            <include layout="@layout/tracking_details_layout"
+                android:id="@+id/tracking_details_layout"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

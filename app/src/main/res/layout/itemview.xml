@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">-->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="15dp"
+    android:id="@+id/ItemViewLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true">
+    <ImageView
+        android:layout_margin="5dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/Image_upload"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/Image_upload">
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/text_view_id"
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_marginLeft="5dp"/>
+
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/text_itemcatagory"
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="5dp"
+            android:hint="Item Category"
+
+            />
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/text_itemname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_below="@+id/text_itemcatagory"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:layout_marginLeft="5dp"
+
+            android:hint="Item Name"
+
+            />
+
+
+        <TextView
+            android:text="MRP Price"
+            android:textColor="@color/black"
+            android:id="@+id/mrpPriceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_below="@+id/text_itemname"
+            android:layout_marginLeft="5dp"
+            android:hint="Item Price"
+
+            />
+
+        <TextView
+            android:layout_toRightOf="@+id/mrpPriceText"
+            android:textColor="@color/black"
+            android:id="@+id/mrpPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_below="@+id/text_itemname"
+            android:layout_marginLeft="5dp"
+            android:hint="Item Price"
+
+            />
+
+        <TextView
+android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/text_itemPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_below="@+id/mrpPriceText"
+            android:layout_marginLeft="5dp"
+            android:hint="Item Price"
+
+            />
+
+    </RelativeLayout>
+</RelativeLayout>
+    <!--
+    </RelativeLayout>-->

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:weightSum="4"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal">
+
+    <TextView
+        android:textSize="14dp"
+        android:padding="1dp"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:id="@+id/itemname"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Items" />
+
+    <TextView
+        android:textSize="14dp"
+        android:padding="1dp"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:id = "@+id/noofbills"
+        android:layout_width = "fill_parent"
+        android:layout_height = "match_parent"
+        android:layout_weight = "1"
+        android:text = "No of Bills" />
+
+    <TextView
+        android:textSize="14dp"
+        android:padding="1dp"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:id="@+id/itemqty"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Item Quantity" />
+
+    <TextView
+        android:textSize="14dp"
+        android:padding="1dp"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:id = "@+id/date"
+        android:layout_width = "fill_parent"
+        android:layout_height = "match_parent"
+        android:layout_weight = "1"
+        android:text = "Bill Date" />
+
+
+</LinearLayout>
+

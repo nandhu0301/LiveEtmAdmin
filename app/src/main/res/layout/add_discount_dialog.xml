@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cyanbase">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:text="Add Discount"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_cancel"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:src="@drawable/cancel" />
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_below="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/black">
+
+                    <EditText
+                        android:id="@+id/d_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Discount Name"
+                        android:textColor="@color/black"
+                        android:maxLines="1"
+                        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+                        android:textSize="16dp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </RelativeLayout>
+
+
+            <RadioGroup
+                android:layout_margin="10dp"
+                android:layout_gravity="left"
+                android:id="@+id/pricepercent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/price"
+                    android:orientation="horizontal"
+                    android:text="price"
+                    android:textStyle="bold|italic"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18dp" />
+
+                <RadioButton
+                    android:id="@+id/percent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="percent"
+                    android:textStyle="bold|italic"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18dp"/>
+            </RadioGroup>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/price_percent_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/black"
+
+                    >
+
+                    <EditText
+                        android:maxLength="4"
+                        android:digits="1234567890"
+                        android:id="@+id/text_priceper"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter price/percent"
+                        android:textColor="@color/black"
+                        android:inputType="phone"
+                        android:textSize="16dp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/min_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/black"
+
+                    >
+
+                    <EditText
+                        android:digits="1234567890"
+                        android:maxLength="4"
+                        android:id="@+id/min_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter minimum Bill Amount"
+                        android:textColor="@color/black"
+                        android:inputType="phone"
+                        android:textSize="16dp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/max_price_text"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/black"
+
+                    >
+
+                    <EditText
+                        android:digits="1234567890"
+                        android:maxLength="4"
+                        android:id="@+id/max_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter maximum Discount Amount"
+                        android:textColor="@color/black"
+                        android:inputType="phone"
+                        android:textSize="16dp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="Discount Validity Till" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/settime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:background="@drawable/b_round"
+                                android:backgroundTint="@color/colorPrimary"
+                                android:text="set time"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/hourText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:visibility="visible" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/setdate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:background="@drawable/b_round"
+                                android:backgroundTint="@color/colorPrimary"
+                                android:text="set Date"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/setdatetext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:visibility="visible" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <!--   <LinearLayout
+
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center"
+                           android:layout_margin="15dp"
+                           android:gravity="center_vertical"
+                           android:orientation="horizontal">
+
+
+                           <RadioGroup
+                               android:id="@+id/duration"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_gravity="left"
+                               android:layout_margin="15dp">
+
+                               <RadioButton
+
+                                   android:id="@+id/hour"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:orientation="horizontal"
+                                   android:text="One Hour"
+                                   android:textColor="#E10E6BF1"
+                                   android:textSize="14dp"
+                                   android:textStyle="bold" />
+                               <LinearLayout
+                                   android:layout_margin="5dp"
+                                   android:orientation="horizontal"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content">
+
+                               <Button
+                                   android:id="@+id/settime"
+                                   android:text="set time"
+                                   android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                   android:backgroundTint="@color/cyanbase"
+                                   android:background="@drawable/b_round"
+                                   android:textColor="@color/white"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="30dp"/>
+                               <TextView
+                                  android:paddingLeft="30dp"
+                                   android:visibility="invisible"
+                                   android:id="@+id/hourText"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"/>
+                               </LinearLayout>
+
+                               <LinearLayout
+                                   android:layout_margin="5dp"
+                                   android:orientation="horizontal"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content">
+
+                                   <Button
+                                       android:visibility="invisible"
+                                       android:id="@+id/setDateonehour"
+                                       android:text="set Date"
+                                       android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                       android:backgroundTint="@color/cyanbase"
+                                       android:background="@drawable/b_round"
+                                       android:textColor="@color/white"
+                                       android:layout_width="wrap_content"
+                                       android:layout_height="30dp"/>
+                                   <TextView
+                                       android:paddingLeft="30dp"
+                                       android:visibility="invisible"
+                                       android:id="@+id/dateTextonehour"
+                                       android:layout_width="wrap_content"
+                                       android:layout_height="wrap_content"/>
+                               </LinearLayout>
+
+
+                               <RadioButton
+                                   android:id="@+id/daily"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="One Day"
+                                   android:textColor="#E10E6BF1"
+                                   android:textSize="14dp"
+                                   android:textStyle="bold" />
+
+                               <LinearLayout
+                                   android:layout_margin="5dp"
+                                   android:orientation="horizontal"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content">
+
+                               <Button
+                                   android:id="@+id/settimeoneday"
+                                   android:text="set time"
+                                   android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                   android:backgroundTint="@color/cyanbase"
+                                   android:background="@drawable/b_round"
+                                   android:textColor="@color/white"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="30dp"/>
+                               <TextView
+                                   android:paddingLeft="30dp"
+                                   android:visibility="invisible"
+                                   android:id="@+id/dayText"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"/>
+                               </LinearLayout>
+
+
+                               <LinearLayout
+                                   android:layout_margin="5dp"
+                                   android:orientation="horizontal"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content">
+
+                                   <Button
+                                       android:visibility="invisible"
+                                       android:id="@+id/setDateoneday"
+                                       android:text="set Date"
+                                       android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                       android:backgroundTint="@color/cyanbase"
+                                       android:background="@drawable/b_round"
+                                       android:textColor="@color/white"
+                                       android:layout_width="wrap_content"
+                                       android:layout_height="30dp"/>
+                                   <TextView
+                                       android:paddingLeft="30dp"
+                                       android:visibility="invisible"
+                                       android:id="@+id/dateTextoneday"
+                                       android:layout_width="wrap_content"
+                                       android:layout_height="wrap_content"/>
+                               </LinearLayout>
+
+                               <RadioButton
+                                   android:id="@+id/weekly"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="One Week"
+                                   android:textColor="#E10E6BF1"
+                                   android:textSize="14dp"
+                                   android:textStyle="bold" />
+                               <LinearLayout
+                                   android:layout_margin="5dp"
+                                   android:orientation="horizontal"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content">
+
+                               <Button
+                                   android:id="@+id/settimeoneweek"
+                                   android:text="set time"
+                                   android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                   android:backgroundTint="@color/cyanbase"
+                                   android:background="@drawable/b_round"
+                                   android:textColor="@color/white"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="30dp"/>
+                               <TextView
+                                   android:paddingLeft="30dp"
+                                   android:visibility="invisible"
+                                   android:id="@+id/weekyText"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"/>
+                               </LinearLayout>
+                               <LinearLayout
+                                   android:layout_margin="5dp"
+                                   android:orientation="horizontal"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content">
+
+                                   <Button
+                                       android:visibility="invisible"
+                                       android:id="@+id/setDateoneweek"
+                                       android:text="set Date"
+                                       android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                       android:backgroundTint="@color/cyanbase"
+                                       android:background="@drawable/b_round"
+                                       android:textColor="@color/white"
+                                       android:layout_width="wrap_content"
+                                       android:layout_height="30dp"/>
+                                   <TextView
+                                       android:paddingLeft="30dp"
+                                       android:visibility="invisible"
+                                       android:id="@+id/dateTextoneweek"
+                                       android:layout_width="wrap_content"
+                                       android:layout_height="wrap_content"/>
+                               </LinearLayout>
+
+                           </RadioGroup>
+
+
+                       </LinearLayout>-->
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="Usage" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="20dp">
+
+
+                        <RadioGroup
+                            android:id="@+id/discountUsage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left">
+
+                            <RadioButton
+
+                                android:id="@+id/discountOneTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:text="One Time Discount"
+                                android:textColor="@color/cyanbase"
+                                android:textSize="14dp"
+                                android:visibility="gone"
+                                android:checked="true"
+                                android:textStyle="bold" />
+
+                            <RadioButton
+                                android:id="@+id/discountMultipletimes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Multiple Time Discount"
+                                android:textColor="@color/black"
+                                android:textSize="14dp"
+                                android:checked="true"
+                                android:textStyle="bold" />
+
+
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="Visibility" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="20dp">
+
+
+                        <RadioGroup
+                            android:id="@+id/visiblityLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left">
+
+                            <RadioButton
+
+                                android:id="@+id/discountVisible"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:text="Visible"
+                                android:textColor="@color/black"
+                                android:textSize="14dp"
+                                android:checked="true"
+                                android:textStyle="bold" />
+
+                            <RadioButton
+                                android:id="@+id/disocuntInVisible"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="InVisible"
+                                android:textColor="@color/black"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/pick"
+                android:background="@color/colorPrimary"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pick Image"
+                android:textColor="@color/white"
+                />
+
+            <ImageView
+                android:id="@+id/imageupload"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/b_chooseimage"
+                android:layout_width="90dp"
+                android:layout_height="90dp"/>
+
+            <ProgressBar
+                android:layout_margin="10dp"
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="220dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_marginBottom="20dp"
+                android:id="@+id/upload"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Discount"/>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

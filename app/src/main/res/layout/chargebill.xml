@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/amount_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/contents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:text="FINAL BILL AMOUNT"
+                    android:textStyle="bold"
+
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp"
+                     />
+
+
+                <LinearLayout
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:gravity="center_horizontal|center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView35"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:paddingLeft="20dp"
+                        android:id="@+id/cash"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView35"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/border"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_marginTop="20dp"
+                            android:id="@+id/paymentmode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="Payment Mode"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimaryDark" />
+
+                        <RadioGroup
+                            android:paddingBottom="20dp"
+                            android:layout_marginTop="20dp"
+                            android:id="@+id/cash_card"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/paymentmode">
+
+                            <RadioButton
+                                android:textSize="14dp"
+                                android:id="@+id/terminal_card_payment"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:text="Terminal Card Payment"
+                                android:textColor="@color/colorPrimaryDark"
+
+                                 />
+
+                            <RadioButton
+                                android:textSize="14dp"
+                                android:id="@+id/b_cash"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:text="Cash"
+                                android:textColor="@color/colorPrimaryDark"
+
+                                />
+
+                        </RadioGroup>
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contents"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                >
+
+                <Button
+                    android:id="@+id/button10"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView35"
+                    android:layout_gravity="left"
+                    android:layout_margin="20dp"
+                    android:layout_toLeftOf="@+id/button9"
+                    android:backgroundTint="@color/cyanbase"
+                    android:background="@drawable/blue_button_background"
+                    android:padding="5dp"
+                    android:text="CANCEL"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="#FFFFFF"
+
+                    android:textSize="16dp" />
+
+                <Button
+                    android:id="@+id/button9"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_margin="20dp"
+                    android:layout_toRightOf="@+id/button10"
+                    android:background="@drawable/blue_button_background"
+                    android:padding="5dp"
+                    android:text="OK"
+                    android:backgroundTint="@color/cyanbase"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/dashboard"
+            android:icon="@drawable/ic_dashboard"
+            android:title="DashBoard" />
+
+        <item
+            android:id="@+id/ApproveSellers"
+            android:icon="@drawable/ic_approveseller"
+            android:title="Approve Store Partner"/>
+
+        <item
+            android:id="@+id/ordertracking"
+            android:icon="@drawable/ic_track"
+            android:title="Order Tracking"/>
+
+
+        <item
+            android:id="@+id/discounts"
+            android:icon="@drawable/ic_add_discounts"
+            android:title="Discounts" />
+
+        <item
+            android:id="@+id/Add_Advertisment"
+            android:icon="@drawable/ic_addbanners"
+            android:title="Maintain Banners" />
+
+
+        <item
+            android:id="@+id/category"
+            android:icon="@drawable/ic_categories"
+            android:title="Categories" />
+
+        <item
+            android:id="@+id/uploadcontactdetails"
+            android:icon="@drawable/ic_contact"
+            android:title="Contact Details" />
+
+
+        <item
+            android:id="@+id/storeHistory"
+            android:icon="@drawable/ic_storehistory_01"
+            android:title="Store History" />
+
+
+        <item
+            android:id="@+id/adminfare"
+            android:icon="@drawable/ic_cashwallet_01"
+            android:title="Admin Fare" />
+
+
+        <item
+            android:id="@+id/adminMonthlyPayments"
+            android:icon="@drawable/ic_cashwallet_01"
+            android:title="Monthly Payment Settlements" />
+
+
+        <item
+            android:id="@+id/logoutscreen"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout" />
+
+
+        <item
+            android:id="@+id/vieworders"
+            android:visible="false"
+            
+            android:icon="@drawable/ic_vieworders"
+            android:title="View Orders" />
+
+        <item
+            android:id="@+id/billingScreen"
+            android:icon="@drawable/ic_vieworders"
+            android:visible="false"
+            android:title="Retail Billing" />
+
+
+
+
+
+
+
+
+        <item
+            android:id="@+id/add_items"
+            android:icon="@drawable/ic_additems"
+            android:visible="false"
+            android:title="Items" />
+
+
+
+
+
+        <item
+            android:id="@+id/add_description"
+            android:visible="false"
+            android:icon="@drawable/ic_additems"
+            android:title="Add Description" />
+
+
+
+
+
+
+
+
+
+
+        <item
+            android:id="@+id/add_seller"
+            android:icon="@drawable/ic_seller_profil"
+            android:visible="false"
+            android:title="My Profile" />
+
+        <item
+            android:id="@+id/updatestatus"
+            android:icon="@drawable/ic_update_order_status"
+            android:visible="false"
+            android:title="Update Order Status" />
+
+        <item
+            android:id="@+id/contactdetails"
+            android:icon="@drawable/ic_admin_details"
+            android:visible="false"
+            android:title="Delivery Settings" />
+
+        <item
+            android:id="@+id/CustomerDetails"
+            android:visible="false"
+            android:icon="@drawable/ic_customer_details"
+            android:title="Customer Details" />
+        <item
+            android:id="@+id/reviewApproval"
+            android:visible="false"
+            app:actionLayout="@layout/menu_counter"
+            app:actionViewClass="android.widget.TextView"
+            android:icon="@drawable/ic_item_approval_01"
+            android:title="Customer Reviews" />
+        <item
+            android:id="@+id/legal"
+            android:visible="false"
+            android:icon="@drawable/ic_legal_details"
+            android:title="Legal Details" />
+
+
+    </group>
+</menu>

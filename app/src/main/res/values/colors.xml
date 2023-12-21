@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F43991</color>
+    <color name="colorPrimaryDark">#15024C</color>
+    <color name="colorAccent">#15024C</color>
+    <color name="cyanbase">#F3C2DE</color>
+    <color name="light_blue">#A683F8</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="grey">#B8B5B5</color>
+    <color name="light_green">#C1F3A8</color>
+    <color name="colorClick">#abcdef</color>
+    <color name="rate_active_color">#FFFEBA39</color>
+    <color name="rate_normal_color">#FFA5A5A5</color>
+    <color name="redColor">#DC1B1B</color>
+    <color name="light_redColor">#E63C3C</color>
+    <color name="face">#ecbcb4</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="gold">#FFD700</color>
+</resources>
